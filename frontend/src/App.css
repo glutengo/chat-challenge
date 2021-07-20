@@ -1,0 +1,77 @@
+html, body {
+  --gutter: 4px;
+  --headerHeight: 40px;
+  --inputHeight: 40px;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+.App-logo {
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: var(--headerHeight);
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: rgb(200, 220, 240);
+}
+
+.chat .chat-messages {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--headerHeight) - var(--inputHeight));
+  overflow: auto;
+  padding: calc(2 * var(--gutter));
+}
+
+.chat .chat-messages .chat-message {
+  width: 90%;
+  border-radius: 4px;
+  background-color: rgb(240, 240, 240);
+  margin: var(--gutter);
+  padding: var(--gutter);
+  font-size: .9rem;
+}
+
+.chat .chat-messages .chat-message-own {
+  align-self: flex-end;
+}
+
+.chat .chat-messages .chat-message .chat-message-content {
+  margin: calc(var(--gutter) / 2) 0;
+}
+
+.chat .chat-messages .chat-message .chat-message-author,
+.chat .chat-messages .chat-message .chat-message-date{
+  opacity: .7;
+  font-size: .7rem;
+}
+
+.chat .input-field {
+  display: flex;
+  padding: calc(2 * var(--gutter));
+  background-color: rgb(200, 200, 200);
+  height: var(--inputHeight);
+}
+
+.chat .input-field input {
+  flex-grow: 1;
+  margin-right: var(--gutter);
+}
+
+
+
