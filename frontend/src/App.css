@@ -25,7 +25,7 @@ html * {
   display: flex;
   flex-direction: column;
   text-align: left;
-  max-width: 640px;
+  max-width: 768px;
   margin: 0 auto;
   background-color: rgb(200, 220, 240);
 }
