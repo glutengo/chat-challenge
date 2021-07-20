@@ -4,6 +4,7 @@
 * Maven
 * Yarn
 * Node
+* Docker
 
 ## Docker / docker-compose
 
