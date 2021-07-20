@@ -19,7 +19,7 @@ export function Chat({author}: {author: string | null}) {
         messagesContainer.current.scrollTop = messagesContainer.current.scrollHeight;
       }
     });
-  }, [updated]);
+  }, [updated, messages]);
 
   useInterval(() => {
     setUpdated(new Date())
